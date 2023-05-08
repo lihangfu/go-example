@@ -21,3 +21,5 @@
 go.work
 
 file/download/remote/temp
+
+.idea
