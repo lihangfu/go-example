@@ -1,4 +1,4 @@
-module go-example
+module github.com/lihangfu/go-example
 
 go 1.18
 
