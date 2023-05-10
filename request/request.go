@@ -171,6 +171,11 @@ func (instance NopRSCloser) SetContentLength(size int64) {
 	instance.status.Size = size
 }
 
+// GetContentLength 获取数据流大小
+func (instance NopRSCloser) GetContentLength() int64 {
+	return instance.status.Size
+}
+
 // Read 实现 NopRSCloser reader
 func (instance NopRSCloser) Read(p []byte) (n int, err error) {
 	if instance.status.IgnoreFirst && len(p) == 512 {
